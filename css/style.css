@@ -1,0 +1,376 @@
+:root{
+    --pink:#e84393;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+/* nav bar */
+.naav-bar{
+    max-width: 1300px;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #e84393; */
+    
+}
+.naav-bar .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    height: 12rem;
+}
+.naav-bar .top .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.naav-bar .top .left p{
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(9, 70, 49);
+}
+.naav-bar .top .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.naav-bar .top .right img{
+    width: 9rem;
+    margin-left: 2rem;
+}
+.naav-bar .bottn{
+    width: 100%;
+    height: 4rem;
+    background-color: green;
+    border-bottom: 2px solid orange;
+}
+.naav-bar .bottn ul{    
+    width: 100%;
+    
+    padding: .2rem .2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .naav-bar .bottn ul li{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+} */
+.naav-bar .bottn ul li a{
+    list-style: none;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: aliceblue;
+    margin-right: 1.5rem;
+    transition: .5s ease-in-out;
+
+}
+.naav-bar .bottn ul li a:hover{
+    border-bottom: 2px solid orange ;
+}
+
+@media (max-width:990) {
+    .naav-bar{
+        max-width: 992;
+        width: 950px;
+    }
+    .naav-bar .bottn ul li a{
+        color: #e84393;
+    }
+}
+
+/* end nav bar */
+/* about us */
+.about-us{
+    max-width: 1300px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    background-image: url('../images/305454630_503544778443149_7077664787095973535_n\ \(1\).jpg');
+    background-size: 100% 70vh;
+    position: relative;
+}
+.about-us .logo{
+    position: absolute;
+    top: 5rem;
+    right: 6rem;
+    width: 150px;
+}
+.about-us .bref{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:25rem;
+    right: 6rem;
+    
+    padding: 1rem 1rem;
+    background-color: rgba(2, 12, 9, 0.3);
+}
+.about-us .bref h1{
+    font-size: 3.5rem;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.about-us .bref h4{
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+.about-us .bref h5{
+    font-size: 2.2rem;
+    color: aliceblue;
+}
+
+.about-us .our-cv ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 39rem;
+    margin-top: -7px;
+    right: 6rem;
+    color: rgb(9, 70, 29);
+    background-color: rgba(89, 238, 238, 0.753);
+    width: 57.5rem;
+}
+.about-us .our-cv ul li{
+    font-size: 2rem;
+    
+}
+/* end about us */
+
+
+
+
+/* contact us */
+.contact-us-body{
+    width: 100%;
+    max-width: 1300px;
+    height: 70vh;
+}
+.contact-us-body .top {
+    
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30rem;
+    padding: 2rem 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.contact-us-body .top img{
+    width: 25rem;
+}
+.contact-us-body .foot{
+    width: 70%;
+    
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+}
+.contact-us-body .foot h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.contact-us-body .foot .card-contain{
+    display: flex;
+    flex-direction: column;
+    
+    height: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.contact-us-body .foot .card-contain .crd{
+    display: flex;
+    flex-direction: row;
+    
+    width: 80%;
+    align-items: center;
+}
+.contact-us-body .foot .card-contain .crd label{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.contact-us-body .foot .card-contain .crd a{
+    text-decoration: none;
+    font-size: 2.5rem;
+
+}
+.contact-us-body .foot .card-contain .crd div{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+/* end contact us */
+
+/* treatment */
+.treatment-body{
+    max-width: 1300px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+.treatment-body h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.treatment-body h5{
+    font-size: 1.5rem;
+    text-align: end;
+}
+.treatment-body p{
+    font-size: 1.5rem;
+    text-align: start;
+    direction: rtl;
+    
+}
+
+/* end treatment */
+/* treatment-ways */
+    .ways-body{
+        width: 80%;
+        height: 70vh;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        padding: 2rem;
+    }
+    .ways-body h1{
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .ways-body p{
+        font-size: 1.5rem;
+    text-align: start   ;
+    direction: rtl;
+    }
+
+/* end treatment-ways */
+
+/* our staf */
+.our-staf{
+    max-width: 1300px;
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    min-height: 100vh;
+    padding: 2rem;
+}
+.our-staf h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.our-staf .body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+.our-staf .img{
+    flex-basis: 45%;
+    background-color: aquamarine ;
+}
+.our-staf .img img{
+    width: 100%;
+}
+
+
+/* end our staf */
+
+/* our advan */
+.our-advan{
+    width: 80%;
+        height: 70vh;
+       
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        padding: 2rem;
+}
+.our-advan h1{
+    font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+}
+.our-advan p{
+    font-size: 1.5rem;
+    text-align: start   ;
+    direction: rtl;
+}
+
+/* end our advan */
+
+/* footer */
+.footer{
+    background-color: rgb(48, 40, 40);
+    width: 100%;
+    max-width: 1300px;
+    height: 10rem;
+    padding: 1.5rem;
+}
+.footer h5{
+    font-size: 1.5rem;
+    color: bisque;
+    text-align: center;
+    
+}
+.footer .icons{
+    margin: 0 auto;
+    width: 25rem;
+    font-size: 3rem;
+    color: bisque;
+    align-items: center;
+}
+
+
+/* end footer */
+
+
+
+
+
