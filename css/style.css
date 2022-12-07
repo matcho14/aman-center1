@@ -14,6 +14,9 @@
     text-decoration: none;
     
 }
+body{
+    background-color: #EEB0AC;
+}
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -200,41 +203,65 @@ html{
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
+    margin-top: -5rem;
 }
 .contact-us-body .foot h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bolder;
     text-align: center;
+    color: #e84393;
 }
 .contact-us-body .foot .card-contain{
     display: flex;
     flex-direction: column;
-    
     height: 20rem;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    
+}
+.contact-us-body .foot .card-contain h4{
+    font-size: 1.9rem;
+    color:#e84393;
 }
 .contact-us-body .foot .card-contain .crd{
     display: flex;
     flex-direction: row;
-    
     width: 80%;
     align-items: center;
+    
 }
 .contact-us-body .foot .card-contain .crd label{
-    font-size: 3rem;
-    margin-right: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: .6rem;
     font-family: 'Cairo', sans-serif;
-    margin-right: 5rem;
+    
+}
+.contact-us-body .foot .card-contain .brans{
+   
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-left: -25rem;
+}
+
+ .crd #bran1,
+ .crd #bran2,
+ .crd #bran3{
+    font-size: 1.3rem;
+    margin-right: .9rem;
 }
 .contact-us-body .foot .card-contain .crd a{
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 
 }
 .contact-us-body .foot .card-contain .crd div{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 /* end contact us */
@@ -313,7 +340,6 @@ html{
     width: 1190px;
     margin-left: auto;
     margin-right: auto;
-   
     min-height: 100vh;
     padding: 2rem;
 }
@@ -322,16 +348,38 @@ html{
     font-weight: 900;
     text-align: center;
 }
+.our-staf .our-info{
+    width: 80%;
+   
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-staf .our-info ul{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.our-staf  h2{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(12, 73, 53);
+}
+
 .our-staf .body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    
     height: 100%;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 
 }
 .our-staf .img{
@@ -348,7 +396,7 @@ html{
 /* our advan */
 .our-advan{
     width: 80%;
-        height: 67vh;
+        min-height: 100vh;
         margin-left: auto;
         margin-right: auto;
         margin-top: 1rem;
@@ -357,15 +405,24 @@ html{
 }
 .our-advan h1{
     font-size: 3rem;
-        font-weight: 900;
-        text-align: center;
+    font-weight: 900;
+    text-align: center;
 }
-.our-advan p{
-    font-size: 2rem;
-    word-spacing: .3rem;
-    text-align: start   ;
+.our-advan .body{
+    width: 100%;
+    
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-advan .body ul{
+    display: flex;
+    flex-direction: column;
     direction: rtl;
-    font-family: 'Cairo', sans-serif;
+    padding: 1rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+    font-weight: 500;
 }
 .our-advan .float-img1 {
     position: absolute;
@@ -378,6 +435,49 @@ html{
 }
 
 /* end our advan */
+
+
+
+/* drug kinds */
+    .drug-kinds-body{
+        max-width: 1300px;
+        width: 1190px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+       
+        padding-top: 1rem;
+        min-height: 100vh;
+    }
+    .drug-kinds-body h1{
+        text-align: center;
+        color: #e84393;
+    }
+    .drug-kinds-body .tmp-contain{
+        display: flex;
+        flex-direction: column;
+       
+        direction: rtl;
+        padding: 2rem;
+        
+    }
+    .drug-kinds-body .tmp-contain h3{
+        font-size: 1.8rem;
+        color: #e84393;
+        font-weight: 700;
+    }
+    .drug-kinds-body .tmp-contain ul {
+        list-style: decimal;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .drug-kinds-body .tmp-contain .tmp p{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+/* end drug kinds */
 
 /* footer */
 .footer{
