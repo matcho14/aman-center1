@@ -15,7 +15,7 @@
     
 }
 body{
-    background-color: #EEB0AC;
+    background-color: #ffe4a8;
 }
 html{
     font-size: 62.5%;
@@ -31,12 +31,39 @@ html{
     /* background-color: #e84393; */
     
 }
+@media (max-width:992px) {
+    .naav-bar{
+        
+        width: 990px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+}
+@media (max-width:768px){
+    .naav-bar{
+        width: 750px;
+    }
+
+    .naav-bar .top{
+        border-bottom: 2px solid black;
+    }
+    .naav-bar ul{
+      width: 750px;
+    }
+    
+    
+
+       
+}
 .naav-bar .top{
     display: flex;
     justify-content: space-between;
     padding: 0rem 2rem;
     height: 12rem;
 }
+
 .naav-bar .top .left{
     display: flex;
     flex-direction: column;
@@ -47,28 +74,62 @@ html{
     font-weight: 900;
     color: rgb(9, 70, 49);
 }
+@media (max-width:992px){
+    .naav-bar .top .left p{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .naav-bar .top .left h4{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:768px){
+    .naav-bar .top .left p{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+    .naav-bar .top .left h4{
+        font-size: 1.5rem;
+    }
+}
+
 .naav-bar .top .right{
     display: flex;
     flex-direction: row;
     align-items: center;
 
 }
+.naav-bar .top .right .fa-bars{
+    font-size: 3rem;
+    display: none;
+}
+@media (max-width:768px){
+    .naav-bar .top .right .fa-bars{
+        display: inline-block;
+    }
+}
 .naav-bar .top .right h1{
     font-family: 'Cairo', sans-serif;
     font-size: 3.5rem;
 
 }
+@media (max-width:992px){
+    .naav-bar .top .right h1{
+        font-size: 2rem;
+
+    }
+    .naav-bar .top .right img{
+        width: 35rem;
+        height: 15rem;
+    }
+}
+
 .naav-bar .top .right img{
     width: 9rem;
     margin-left: 2rem;
 }
-.naav-bar .bottn{
-    width: 100%;
-    height: 7rem;
-    background-color: green;
-    border-bottom: 2px solid orange;
-}
-.naav-bar .bottn ul{    
+
+.naav-bar  ul{    
     width: 100%;
     padding: 1.3rem .2rem;
     display: flex;
@@ -77,10 +138,13 @@ html{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    
+    width: 100%;
+    height: 7rem;
+    background-color: #008b52;
+    border-bottom: 2px solid orange;
 }
 
-.naav-bar .bottn ul li a{
+.naav-bar  ul li a{
     list-style: none;
     text-decoration: none;
     display:inline-block;
@@ -94,20 +158,19 @@ html{
     border-radius: 1rem;
 
 }
-.naav-bar .bottn ul li a:hover{
+@media (max-width:768px){
+    .naav-bar  ul li a{
+        font-size: 1.2rem;
+    }
+}
+.naav-bar  ul li a:hover{
     border-bottom: 2px solid orange ;
     color: black;
     background-color: aqua;
 }
 
-@media (max-width:990) {
-    .naav-bar{
-        max-width: 992;
-        width: 950px;
-    }
-    .naav-bar .bottn ul li a{
-        color: #e84393;
-    }
+@media (max-width:992) {
+    
 }
 
 /* end nav bar */
@@ -124,13 +187,18 @@ html{
     background-size: 100% 68vh;
     position: relative;
 }
+@media (max-width:768px){
+    .about-us{
+        width: 750px;
+    }
+}
 .about-us .logo{
     position: absolute;
     top: 5rem;
     right: 6rem;
     width: 150px;
 }
-.about-us .bref{
+/* .about-us .bref{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +240,7 @@ html{
 .about-us .our-cv ul li{
     font-size: 2rem;
     
-}
+} */
 /* end about us */
 
 
@@ -183,6 +251,23 @@ html{
     width: 100%;
     max-width: 1300px;
     height: 66.5vh;
+}
+@media (max-width :992px){
+    .contact-us-body{
+        width: 990px;
+       
+        max-width: 1300px;
+        height: 66.5vh;
+    }
+
+}
+@media (max-width :768px){
+    .contact-us-body{
+        width: 750px;
+       
+     
+    }
+
 }
 .contact-us-body .top {
     
@@ -197,6 +282,13 @@ html{
 .contact-us-body .top img{
     width: 40rem;
 }
+@media (max-width :992px){
+    .contact-us-body .top img{
+        width: 35rem;
+        height: 25rem;
+    }
+}
+
 .contact-us-body .foot{
     width: 70%;
     height: 30rem;
@@ -224,6 +316,11 @@ html{
     font-size: 1.9rem;
     color:#e84393;
 }
+@media (max-width:992px){
+    .contact-us-body .foot .card-contain h4{
+        margin-top: 1rem;
+    }
+}
 .contact-us-body .foot .card-contain .crd{
     display: flex;
     flex-direction: row;
@@ -247,6 +344,23 @@ html{
     justify-content: flex-end;
     margin-top: 1rem;
     margin-left: -25rem;
+}
+@media (max-width:992px){
+    .contact-us-body .foot .card-contain .brans{
+        width: 70rem;
+        height: 30rem;
+        margin-left: -5rem;
+       
+    }
+}
+@media (max-width:768px){
+    .contact-us-body .foot .card-contain .brans{
+        width: 70rem;
+        height: 30rem;
+       
+       margin-left: 3rem;
+       
+    }
 }
 
  .crd #bran1,
@@ -277,6 +391,20 @@ html{
     padding: 2rem;
     position: relative;
 }
+@media (max-width:992px){
+    .treatment-body{
+        width: 990px;
+    }
+    
+    
+}
+@media (max-width:768px){
+    .treatment-body{
+        width: 750px;
+    }
+    
+    
+}
 .treatment-body .float-img1{
     position: absolute;
     top: 10rem;
@@ -284,6 +412,14 @@ html{
 .treatment-body .float-img1 img{
     width: 30rem;
     box-shadow: 5px 5px 2px 2px rgba(209, 200, 200, 0.486);
+}
+@media (max-width:768px){
+    .treatment-body .float-img1 img{
+        width: 20rem;
+    }
+    .treatment-body .float-img1{
+        top: 30rem;
+    }
 }
 .treatment-body h1{
     font-size: 5rem;
@@ -300,6 +436,14 @@ html{
     font-family: 'Cairo', sans-serif;
     
 }
+@media (max-width:992px){
+    
+    .treatment-body p{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+}
 
 /* end treatment */
 /* treatment-ways */
@@ -311,6 +455,16 @@ html{
         margin-top: 1rem;
         padding: 2rem;
         position: relative;
+    }
+    @media (max-width:992px){
+        .ways-body{
+            width: 990px;
+        }
+    }
+    @media (max-width:768px){
+        .ways-body{
+            width: 750px;
+        }
     }
     .ways-body h1{
         font-size: 3rem;
@@ -331,6 +485,20 @@ html{
         width: 30rem;
     box-shadow: 5px 5px 2px 2px rgba(209, 200, 200, 0.486);
     }
+    @media (max-width:992px){
+        .ways-body .float-img1 img{
+            width: 25rem;
+        } 
+    }
+    @media (max-width:768px){
+        .ways-body .float-img1{
+            top: 27rem;
+        }
+        .ways-body .float-img1 img{
+            width: 20rem;
+        } 
+        } 
+    
 
 /* end treatment-ways */
 
@@ -342,6 +510,18 @@ html{
     margin-right: auto;
     min-height: 100vh;
     padding: 2rem;
+}
+@media (max-width:992px){
+    .our-staf{
+        width: 990px;
+
+    }
+}
+@media (max-width:768px){
+    .our-staf{
+        width: 750px;
+
+    }
 }
 .our-staf h1{
     font-size: 3rem;
@@ -363,6 +543,12 @@ html{
     font-size: 1.9rem;
     font-weight: 500;
 }
+@media (max-width:992px){
+    .our-staf .our-info ul{
+        font-size: 1.5rem;
+    }
+}
+
 .our-staf  h2{
     font-size: 3rem;
     font-weight: 900;
@@ -386,6 +572,15 @@ html{
     flex-basis: 45%;
     background-color: aquamarine ;
 }
+@media (max-width:768px){
+    .our-staf .img{
+        flex-basis: 45%;
+    }
+    our-staf .img img{
+        width: 80%;
+    }
+}
+
 .our-staf .img img{
     width: 100%;
 }
@@ -402,6 +597,16 @@ html{
         margin-top: 1rem;
         padding: 2rem;
         position: relative;
+}
+@media (max-width:992px){
+    .our-advan{
+        width: 990px;
+    }
+}
+@media (max-width:768px){
+    .our-advan{
+        width: 750px;
+    }
 }
 .our-advan h1{
     font-size: 3rem;
@@ -433,6 +638,14 @@ html{
     width: 30rem;
     box-shadow: 5px 5px 2px 2px rgba(209, 200, 200, 0.486);
 }
+@media (max-width:768px){
+    .our-advan .float-img1 img{
+        width: 20rem;
+    }
+    .our-advan .float-img1{
+        left: 2rem;
+    }
+}
 
 /* end our advan */
 
@@ -449,6 +662,16 @@ html{
        
         padding-top: 1rem;
         min-height: 100vh;
+    }
+    @media (max-width:992px){
+        .drug-kinds-body{
+            width: 990px;
+        }
+    }
+    @media (max-width:768px){
+        .drug-kinds-body{
+            width: 750px;
+        }
     }
     .drug-kinds-body h1{
         text-align: center;
