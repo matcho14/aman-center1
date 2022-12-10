@@ -214,7 +214,7 @@ html{
 @media (max-width:568px){
     .naav-bar  ul li a{
         font-size: 1rem;
-        padding: .1rem;
+        padding: 0rem;
     }
 }
 @media (max-width:768px){
